@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@200;300;400&display=swap');
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Poppins;
+    padding: 0;
+    margin: 0;
+    
+}
+.task_cont{
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 0rem 3rem;
+}
+.input_wrap{
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 1rem;
+}
+#msg{
+    color: red;
+    margin-bottom: 10px;
+}
+#form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+#title_input{
+    width: 20%;
+    height: 35px;
+    text-indent: 5px;
+}
+#title_input:focus, #desc_input:focus{
+    outline: none;
+    border: 2px solid black;
+}
+#desc_input{
+    width: 30%;
+    height: 35px;
+    text-indent: 5px;
+}
+#tasks{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 2rem 0rem;
+}
+#task_list{
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    width: 200px;
+    border: 1px solid black;
+    padding: 15px 15px 0px 15px;
+    height: auto;
+    border-radius: 5px;
+}
+.completed{
+    opacity: 0.7;
+    color: green;
+}
+#task_list h3{
+    margin: 0;
+}
+#task_list p{
+    margin: 0;
+    display: flex;
+    word-break: break-word;
+    font-size: 13px;
+    margin: 10px 0px;
+    overflow-x: scroll;
+}
+label{
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+}
+#filter_btn{
+    margin: 1rem 0rem;
+    gap: 1rem;
+    display: flex;
+    align-items: center;
+}
+#add_task{
+    padding: 10px;
+    background: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+#add_task:hover{
+    opacity: 0.8;
+}
+#task__desc{
+    height: 100px;
+}
+.options{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.options p{
+    cursor: pointer;
+    background: black;
+    color: white;
+    padding: 5px;
+}
+.options p:hover{
+    opacity: 0.7;
+}
