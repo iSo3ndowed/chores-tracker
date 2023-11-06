@@ -1,6 +1,5 @@
 let form = document.getElementById("form");
 let titleInput = document.getElementById("title_input");
-// let dateInput = document.getElementById("dateInput");
 let descInput = document.getElementById("desc_input");
 let msg = document.getElementById("msg");
 let tasks = document.getElementById("tasks");
@@ -14,11 +13,9 @@ form.addEventListener("submit", (e) => {
 });
 
 let formValidation = () => {
-  if (titleInput.value === "") {
-    console.log("failure");
+  if (titleInput.value === "" || descInput.value === "") {
     msg.innerHTML = "Task cannot be blank";
   } else {
-    console.log("success");
     msg.innerHTML = "";
     acceptData();
     add.click();
@@ -80,7 +77,6 @@ let resetForm = () => {
 
 (() => {
   data = JSON.parse(localStorage.getItem("data")) || []
-  console.log(data);
   createTasks();
 })();
 
